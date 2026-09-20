@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HabitStake responsive QA</title>
+    <style>
+      body {
+        margin: 0;
+        background: #202520;
+        color: #e7f0e7;
+        font: 14px system-ui;
+      }
+      header {
+        padding: 12px;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      button {
+        padding: 8px 14px;
+        cursor: pointer;
+      }
+      iframe {
+        display: block;
+        height: 1100px;
+        max-width: 100%;
+        margin: auto;
+        border: 1px solid #587358;
+        background: #080b09;
+      }
+      output {
+        margin-left: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <strong>Responsive QA · actual app viewport</strong
+      ><button data-width="320">320 px</button
+      ><button data-width="390">390 px</button
+      ><button data-width="768">768 px</button
+      ><button data-width="1280">1280 px</button
+      ><output id="size">390 px</output>
+    </header>
+    <iframe title="HabitStake viewport" src="/" width="390"></iframe>
+    <script type="module">
+      const frame = document.querySelector("iframe");
+      for (const button of document.querySelectorAll("button"))
+        button.addEventListener("click", () => {
+          frame.width = button.dataset.width;
+          document.querySelector("#size").textContent =
+            button.dataset.width + " px";
+        });
+    </script>
+  </body>
+</html>

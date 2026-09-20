@@ -1,0 +1,42 @@
+{
+  "name": "habitstake",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A daily commitment DApp for BOT Chain.",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "compile": "node scripts/compile.mjs",
+    "test": "npm run compile && node --test --test-concurrency=1 tests/*.test.mjs",
+    "source": "node scripts/export-source.mjs"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "4.1.17",
+    "ethers": "6.17.0",
+    "framer-motion": "12.23.24",
+    "lucide-react": "0.468.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "tailwindcss": "4.1.17"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "5.1.0",
+    "ganache": "7.9.2",
+    "jsdom": "26.1.0",
+    "prettier": "3.6.2",
+    "solc": "0.8.30",
+    "vite": "7.3.6"
+  },
+  "overrides": {
+    "motion-dom": "12.23.23",
+    "motion-utils": "12.23.6",
+    "solc": {
+      "tmp": "0.2.6"
+    }
+  }
+}

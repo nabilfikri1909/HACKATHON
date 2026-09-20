@@ -1,0 +1,11 @@
+node_modules/
+dist/
+artifacts/
+.env
+.env.local
+.env.*.local
+.sites-runtime/
+coverage/
+test-results/
+FULL_SOURCE.md
+*.log
