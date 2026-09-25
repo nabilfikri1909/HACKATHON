@@ -20,12 +20,12 @@ export const CHAINS = Object.freeze({
     rpc: env.VITE_BOT_MAINNET_RPC_URL || "https://rpc.botchain.ai",
     explorer: "https://scan.botchain.ai",
     faucet: null,
-    configuredAddress: env.VITE_BOT_MAINNET_CONTRACT_ADDRESS || "",
+    configuredAddress: env.VITE_BOT_MAINNET_CONTRACT_ADDRESS || "0xeD549ac4853B079e19780397810Cf67f0e09C7b9",
   },
 });
 
 export const DEFAULT_CHAIN_ID =
-  Number(env.VITE_DEFAULT_CHAIN_ID) === 677 ? 677 : 968;
+  Number(env.VITE_DEFAULT_CHAIN_ID) === 968 ? 968 : 677;
 export const CONTRACT_ABI = [
   "function DAY() view returns (uint256)",
   "function MAX_DAYS() view returns (uint256)",

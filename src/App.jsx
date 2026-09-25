@@ -655,6 +655,11 @@ export default function App() {
                   ? "Original principal only. Keep some BOT in your wallet for claim gas."
                   : "A promise to yourself, recorded on-chain."}
             </p>
+            <p className="mt-8 text-center text-sm text-zinc-500">
+              HabitStake is officially launched on <a href="https://botchain.ai" target="_blank" className="underline">BOT Chain Mainnet</a>.
+              <br />
+              <a href="https://scan.botchain.ai" target="_blank" className="underline mt-2 inline-block">View on Explorer</a>
+            </p>
           </Panel>
 
           <Panel
