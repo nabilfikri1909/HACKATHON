@@ -53,9 +53,8 @@ Testnet is the default. The wallet integration adds an unknown network with `wal
 
 ## Deployment
 
-**Testnet Contract Address: Not deployed.**
-
-**Mainnet Contract Address: Not deployed.**
+BOT Chain Testnet: `0xf1045163E8ae1F38e660106A101e09589772e18D`
+BOT Chain Mainnet: `0xeD549ac4853B079e19780397810Cf67f0e09C7b9`
 
 This source package does not claim a deployment or contain invented transaction hashes. Record the actual address and deployment transaction here after deploying.
 
